@@ -742,8 +742,8 @@ html.is-animating .trm-swup-animation {
   color: var(--primary, #afb42b);
 }
 .trm-top-bar .container .trm-left-side .trm-logo-frame img {
-  width: 32px;
-  margin-right: 10px;
+  width: 200px;
+  margin-right: 80px;
 }
 .trm-top-bar .container .trm-right-side {
   height: 100%;
@@ -3280,170 +3280,6 @@ figure.highlight .code-expand-btn svg {
     opacity: 0.6;
   }
 }
-:root {
-  --highlight-background: #F6F8FA;
-  --highlight-foreground: #4d5a60;
-  --highlight-gutter-color: #90A4AE;
-  --highlight-gutter-bg-color: #f1f1f1;
-  --highlight-tools-color: #646464;
-  --highlight-tools-bg-color: #e6ebf1;
-  --highlight-scrollbar: #d7d7d7;
-  --highlight-addition: #e32323;
-  --highlight-deletion: #BF42BF;
-  --highlight-comment: rgba(149, 165, 166, 0.8);
-  --highlight-yellow: #FFB62C;
-  --highlight-purple: #7C4DFF;
-  --highlight-aqua: #39ADB5;
-  --highlight-red: #E53935;
-  --highlight-orange: #F76D47;
-  --highlight-green: #91B859;
-  --highlight-blue: #6182B8;
-}
-:root.dark {
-  --highlight-background: #303030;
-  --highlight-foreground: #eeeeee;
-  --highlight-gutter-color: #b9b9b9;
-  --highlight-gutter-bg-color: #2a2a2a;
-  --highlight-tools-color: #adadad;
-  --highlight-tools-bg-color: #444444;
-  --highlight-scrollbar: #646464;
-  --highlight-addition: #30de10;
-  --highlight-deletion: #d62744;
-  --highlight-comment: #969896;
-  --highlight-yellow: #FFCB6B;
-  --highlight-purple: #C792EA;
-  --highlight-aqua: #89DDFF;
-  --highlight-red: #FF5370;
-  --highlight-orange: #F78C6C;
-  --highlight-green: #C3E88D;
-  --highlight-blue: #82AAFF;
-}
-.highlight {
-  position: relative;
-  margin: 20px 0;
-  padding: 30px 0 0;
-  font-size: 14px !important;
-  text-shadow: none;
-  border-radius: 4px;
-  line-height: 1.5;
-  overflow: hidden;
-}
-.highlight .gutter {
-  width: 28px;
-  color: var(--highlight-gutter-color);
-  background-color: var(--highlight-gutter-bg-color);
-  text-align: center;
-  padding: 10px 4px !important;
-  user-select: none;
-  display: block;
-}
-.highlight .gutter pre {
-  border-radius: 0;
-}
-.highlight .code {
-  padding: 10px !important;
-  width: 100%;
-  overflow-x: auto;
-  color: var(--highlight-foreground);
-  background: var(--highlight-background);
-}
-.highlight pre {
-  font-size: 14px !important;
-  border: none;
-  white-space: pre;
-  margin: 0;
-  padding: 0;
-}
-.highlight table {
-  margin: 0;
-  width: 100%;
-  display: block;
-  overflow-y: auto;
-  /* table-layout: fixed; */
-}
-.highlight table::-webkit-scrollbar-thumb {
-  background: var(--highlight-scrollbar);
-}
-.highlight td {
-  border: none !important;
-  padding: 0 !important;
-}
-pre {
-  overflow: initial;
-  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
-}
-pre code {
-  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
-  background: none;
-  text-shadow: none;
-  padding: 0;
-}
-pre .addition {
-  color: var(--highlight-addition) !important;
-}
-pre .deletion {
-  color: var(--highlight-deletion) !important;
-}
-pre .comment {
-  color: var(--highlight-comment);
-}
-pre .attr,
-pre .property,
-pre .tag .attr,
-pre .javascript .function {
-  color: var(--highlight-purple) !important;
-}
-pre .tag,
-pre .title,
-pre .keyword,
-pre .css .hexcolor {
-  color: var(--highlight-aqua) !important;
-}
-pre .variable,
-pre .attribute,
-pre .regexp,
-pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .tag .name,
-pre .css .class,
-pre .css .pseudo {
-  color: var(--highlight-red) !important;
-}
-pre .number,
-pre .preprocessor,
-pre .literal,
-pre .params,
-pre .constant {
-  color: var(--highlight-orange) !important;
-}
-pre .built_in {
-  color: var(--highlight-yellow) !important;
-}
-pre .class,
-pre .ruby .class .title,
-pre .css .rules .attribute,
-pre .string,
-pre .value,
-pre .inheritance,
-pre .header,
-pre .ruby .symbol,
-pre .xml .cdata {
-  color: var(--highlight-green) !important;
-}
-pre .function,
-pre .python .decorator,
-pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
-pre .perl .sub,
-pre .javascript .title,
-pre .coffeescript .title {
-  color: var(--highlight-blue) !important;
-}
 .trm-fixed-container {
   position: fixed;
   z-index: 10;
@@ -3511,4 +3347,19 @@ pre .coffeescript .title {
 .trm-fixed-container.offset #trm-back-top {
   opacity: 1;
   transform: translateY(0) scale(1);
+}
+/* 背景宇宙星光  */
+#universe {
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }
